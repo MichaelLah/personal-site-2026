@@ -92,7 +92,7 @@
 }
 
 .primaryButton:hover {
-  transform: translateY(-2px);
+  transform: scale(1.02);
   box-shadow: 0 6px 20px color-mix(in srgb, var(--primary) 50%, transparent);
 }
 
@@ -105,7 +105,7 @@
 .secondaryButton:hover {
   background: var(--primary);
   color: var(--bg-white);
-  transform: translateY(-2px);
+  transform: scale(1.02);
 }
 
 /* Section Styles */
@@ -157,7 +157,7 @@
 }
 
 .skillCard:hover {
-  transform: translateY(-4px);
+  transform: scale(1.02);
   box-shadow: 0 8px 24px color-mix(in srgb, var(--primary) 15%, transparent);
   border-color: var(--primary);
 }
@@ -195,7 +195,7 @@
 
 .timelineItem:hover {
   box-shadow: 0 4px 16px color-mix(in srgb, var(--primary) 15%, transparent);
-  transform: translateX(4px);
+  transform: scale(1.01);
 }
 
 .timelineHeader {
@@ -278,7 +278,7 @@
   border-color: var(--primary);
   background: var(--primary);
   color: var(--bg-white);
-  transform: translateY(-2px);
+  transform: scale(1.05);
   box-shadow: 0 4px 12px color-mix(in srgb, var(--primary) 20%, transparent);
 }
 
