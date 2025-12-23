@@ -156,7 +156,7 @@ export const HomePage = () => {
             Email
           </a>
           <a
-            href="/resume.pdf"
+            href="/MichaelLahResume.pdf"
             target="_blank"
             className={styles.socialLink}
           >
