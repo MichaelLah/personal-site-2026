@@ -13,16 +13,18 @@ export const Experience = () => {
           location="San Francisco, CA"
         >
           <li>
-            Designed and implemented a headless WordPress-powered CMS, replacing manual processes
-            with a scalable, feature-rich publishing workflow that supports rich media and SEO
+            Designed and implemented a headless WordPress-powered CMS, replacing
+            manual processes with a scalable, feature-rich publishing workflow
+            that supports rich media and SEO
           </li>
           <li>
-            Enabled high-profile partnerships with T-Mobile, PetSmart, and Toyota through NBC Americas
-            collaboration, expanding curated content capabilities and driving revenue
+            Enabled high-profile partnerships with T-Mobile, PetSmart, and
+            Toyota through NBC Americas collaboration, expanding curated content
+            capabilities and driving revenue
           </li>
           <li>
-            Managed scalable email API for dynamic, high-volume personalized trail recommendations
-            and monthly recap emails
+            Managed scalable email API for dynamic, high-volume personalized
+            trail recommendations and monthly recap emails
           </li>
         </ExperienceCard>
 
@@ -33,9 +35,14 @@ export const Experience = () => {
           location="Columbus, OH"
         >
           <li>Led project to optimize API, cutting p95 latency in half</li>
-          <li>Upgraded core technologies including Ruby 3, Rails 7, and MySQL 8</li>
+          <li>
+            Upgraded core technologies including Ruby 3, Rails 7, and MySQL 8
+          </li>
           <li>Worked on major refactors of core data model</li>
-          <li>Hosted "Tech Stack Overview" sessions and conducted technical interviews</li>
+          <li>
+            Hosted "Tech Stack Overview" sessions and conducted technical
+            interviews
+          </li>
         </ExperienceCard>
 
         <ExperienceCard
@@ -45,8 +52,13 @@ export const Experience = () => {
           location="Columbus, OH"
         >
           <li>Full-stack development using Ruby on Rails and React</li>
-          <li>Conducted 17 technical interviews and reviewed 24 code challenge submissions</li>
-          <li>Reduced Elasticsearch reindex time from 1.5 hours to 7 minutes</li>
+          <li>
+            Conducted 17 technical interviews and reviewed 24 code challenge
+            submissions
+          </li>
+          <li>
+            Reduced Elasticsearch reindex time from 1.5 hours to 7 minutes
+          </li>
         </ExperienceCard>
 
         <ExperienceCard
@@ -56,8 +68,8 @@ export const Experience = () => {
           location="Columbus, OH"
         >
           <li>
-            Improved and expanded the "Owner Portal" mobile app, website, and backend
-            with new features and enhancements
+            Improved and expanded the "Owner Portal" mobile app, website, and
+            backend with new features and enhancements
           </li>
         </ExperienceCard>
       </div>

@@ -13,10 +13,7 @@ export const Footer = () => {
         >
           LinkedIn
         </a>
-        <a
-          href="mailto:michaellahdev@gmail.com"
-          className={styles.socialLink}
-        >
+        <a href="mailto:michaellahdev@gmail.com" className={styles.socialLink}>
           Email
         </a>
         <a

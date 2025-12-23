@@ -3,7 +3,11 @@
   /* Brand Colors */
   --primary: #667eea;
   --primary-dark: #764ba2;
-  --primary-gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  --primary-gradient: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    var(--primary-dark) 100%
+  );
 
   /* Text Colors */
   --text-dark: #1e293b;

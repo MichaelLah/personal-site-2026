@@ -9,7 +9,13 @@ export interface ExperienceCardProps {
   children: ReactNode;
 }
 
-export const ExperienceCard = ({ title, company, date, location, children }: ExperienceCardProps) => {
+export const ExperienceCard = ({
+  title,
+  company,
+  date,
+  location,
+  children,
+}: ExperienceCardProps) => {
   return (
     <div className={styles.timelineItem}>
       <div className={styles.timelineHeader}>
@@ -18,9 +24,7 @@ export const ExperienceCard = ({ title, company, date, location, children }: Exp
         <span className={styles.date}>{date}</span>
         <span className={styles.location}>{location}</span>
       </div>
-      <ul className={styles.achievements}>
-        {children}
-      </ul>
+      <ul className={styles.achievements}>{children}</ul>
     </div>
   );
 };
