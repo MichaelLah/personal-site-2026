@@ -1,0 +1,57 @@
+// Breakpoints
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+// Responsive mixins
+@mixin sm-down {
+  @media (max-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin md-down {
+  @media (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin lg-down {
+  @media (max-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin xl-down {
+  @media (max-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+// Common utility mixins
+@mixin transition-transform {
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+@mixin section-title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+@mixin card-hover {
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px color-mix(in srgb, var(--primary) 15%, transparent);
+    border-color: var(--primary);
+  }
+}
