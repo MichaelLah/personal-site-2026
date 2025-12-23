@@ -1,3 +1,4 @@
+import { type ReactNode } from 'react';
 import styles from './ExperienceCard.module.css';
 
 export interface ExperienceCardProps {
@@ -5,10 +6,10 @@ export interface ExperienceCardProps {
   company: string;
   date: string;
   location: string;
-  achievements: string[];
+  children: ReactNode;
 }
 
-export const ExperienceCard = ({ title, company, date, location, achievements }: ExperienceCardProps) => {
+export const ExperienceCard = ({ title, company, date, location, children }: ExperienceCardProps) => {
   return (
     <div className={styles.timelineItem}>
       <div className={styles.timelineHeader}>
@@ -18,9 +19,7 @@ export const ExperienceCard = ({ title, company, date, location, achievements }:
         <span className={styles.location}>{location}</span>
       </div>
       <ul className={styles.achievements}>
-        {achievements.map((achievement, index) => (
-          <li key={index}>{achievement}</li>
-        ))}
+        {children}
       </ul>
     </div>
   );
