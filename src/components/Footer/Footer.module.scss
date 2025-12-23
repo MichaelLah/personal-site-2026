@@ -1,0 +1,45 @@
+// Mixins
+@mixin section-title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+/* Footer / Links Section */
+.links {
+  padding: 4rem 1rem;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  @include section-title;
+}
+
+/* Social Links */
+.socialLinks {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.socialLink {
+  padding: 0.75rem 1.5rem;
+  background: var(--bg-white);
+  color: var(--primary);
+  border: 2px solid var(--border-light);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: var(--bg-white);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--primary) 20%, transparent);
+  }
+}

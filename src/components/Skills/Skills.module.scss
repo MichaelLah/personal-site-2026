@@ -1,0 +1,67 @@
+// Mixins
+@mixin section-title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+@mixin card-hover {
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px color-mix(in srgb, var(--primary) 15%, transparent);
+    border-color: var(--primary);
+  }
+}
+
+/* Skills Section */
+.skills {
+  padding: 4rem 1rem;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  @include section-title;
+}
+
+/* Skills Grid */
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+
+  @media (max-width: var(--breakpoint-md)) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.skillCard {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--primary) 8%, transparent) 0%,
+    color-mix(in srgb, var(--primary-dark) 8%, transparent) 100%
+  );
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-light);
+  @include card-hover;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+  }
+
+  p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+}

@@ -1,0 +1,27 @@
+// Mixins
+@mixin section-title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+/* Experience Section */
+.experience {
+  padding: 4rem 1rem;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  @include section-title;
+}
+
+/* Experience Timeline */
+.timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}

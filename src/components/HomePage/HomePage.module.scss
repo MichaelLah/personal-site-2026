@@ -1,0 +1,30 @@
+/* Container with CSS Variables */
+.container {
+  /* Brand Colors */
+  --primary: #667eea;
+  --primary-dark: #764ba2;
+  --primary-gradient: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    var(--primary-dark) 100%
+  );
+
+  /* Text Colors */
+  --text-dark: #1e293b;
+  --text-body: #475569;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+
+  /* Background & Border Colors */
+  --bg-white: white;
+  --border-light: #e2e8f0;
+
+  /* Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+
+  /* Layout */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}

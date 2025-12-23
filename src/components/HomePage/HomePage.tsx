@@ -3,7 +3,7 @@ import { AboutMe } from '../AboutMe/AboutMe';
 import { Skills } from '../Skills/Skills';
 import { Experience } from '../Experience/Experience';
 import { Footer } from '../Footer/Footer';
-import styles from './HomePage.module.css';
+import styles from './HomePage.module.scss';
 
 export const HomePage = () => {
   return (

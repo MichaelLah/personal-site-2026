@@ -1,0 +1,68 @@
+// Variables
+$photo-size: 300px;
+$mobile-breakpoint: 768px;
+
+// Mixins
+@mixin section-title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+/* About Section */
+.about {
+  padding: 4rem 1rem;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  @include section-title;
+}
+
+.aboutContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+
+  @media (max-width: $mobile-breakpoint) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.photoWrapper {
+  flex: 0 0 $photo-size;
+
+  @media (max-width: $mobile-breakpoint) {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: $photo-size;
+  }
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.aboutContent {
+  flex: 1;
+  text-align: left;
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-body);
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    text-align: center;
+  }
+}

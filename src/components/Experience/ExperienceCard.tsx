@@ -1,5 +1,5 @@
 import { type ReactNode } from 'react';
-import styles from './ExperienceCard.module.css';
+import styles from './ExperienceCard.module.scss';
 
 export interface ExperienceCardProps {
   title: string;

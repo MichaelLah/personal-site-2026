@@ -1,5 +1,5 @@
 import { ExperienceCard } from './ExperienceCard';
-import styles from './Experience.module.css';
+import styles from './Experience.module.scss';
 
 export const Experience = () => {
   return (
