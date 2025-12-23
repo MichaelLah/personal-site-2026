@@ -1,0 +1,71 @@
+/* Experience Timeline Item */
+.timelineItem {
+  background: var(--bg-white);
+  border-left: 4px solid var(--primary);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px color-mix(in srgb, black 8%, transparent);
+  transition: all 0.3s ease;
+}
+
+.timelineItem:hover {
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--primary) 15%, transparent);
+  transform: scale(1.01);
+}
+
+.timelineHeader {
+  margin-bottom: 1.5rem;
+}
+
+.timelineHeader h3 {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.company {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}
+
+.date {
+  display: inline-block;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-right: 1rem;
+}
+
+.location {
+  display: inline-block;
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+
+.achievements {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievements li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+.achievements li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.achievements li:last-child {
+  margin-bottom: 0;
+}
