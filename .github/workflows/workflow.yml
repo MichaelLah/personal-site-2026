@@ -1,0 +1,11 @@
+name: CI/CD
+on: [push]
+
+jobs:
+  Tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - run: echo "got these files" && ls ${{ github.workspace }}
+
